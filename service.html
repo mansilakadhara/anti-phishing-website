@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Checker</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <a href="index.html">
+                    <span class="ml-3 text-xl"><b>SecureServ Services</b></span>
+                </a>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+
+            <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Anti Phishing Website Tracker
+                </h1>
+                <p class="mb-8 leading-relaxed"> Stay protected, Stay Safe</p>
+                <div class="flex w-full justify-center items-end">
+                    <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                        <label for="hero-field" class="leading-7 text-sm text-gray-600">Enter URL:</label>
+                        <input type="text" id="getUserURL"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button onclick="getResults()" class=" inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none
+                            hover:bg-blue-400 rounded text-lg">Check</button>
+                </div>
+                <p id="result" class="text-sm mt-2 text-gray-500 mb-8 w-full">This process might take several seconds
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                Developed by —
+                <a href="https://github.com/cmulay" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank"><b>@Mansi Lakadhara</b></a> ,
+                <a href="https://github.com/atharva21-stack" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank"><b> @Shrushti Lahoti</b></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Backend Script-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
